@@ -4,7 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-    "build": "ng build",
+    "build": "ng build --configuration=production --output-hashing=none",
+    "build:component": "npm run build && npm run build:make-element",
+    "build:make-element": "node make-element.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -30,6 +32,8 @@
     "@angular/compiler-cli": "~12.0.0",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+    "concat": "^1.0.3",
+    "fs-extra": "^10.0.0",
     "jasmine-core": "~3.7.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
