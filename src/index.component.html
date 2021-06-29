@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <script src="input-output-component.js"></script>
+</head>
+
+<body style="margin:0px;">
+    <input-output></input-output>
+    <script>
+        var info = { name: 'WTT' };
+        var element = document.querySelector('input-output');
+        element.info = info;
+        element.addEventListener('message', function (data) {
+            alert(data.detail);
+        });
+    </script>
+</body>
+
+</html>

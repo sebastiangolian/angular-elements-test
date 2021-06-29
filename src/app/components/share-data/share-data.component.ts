@@ -13,7 +13,7 @@ import {
   templateUrl: './share-data.component.html',
   styleUrls: ['./share-data.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.ShadowDom,
+  encapsulation: ViewEncapsulation.Emulated,
 })
 export class ShareDataComponent implements OnInit {
   @Input() info: any = {};
