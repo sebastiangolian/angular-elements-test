@@ -11,7 +11,7 @@ import {
 @Component({
   selector: 'app-share-data',
   templateUrl: './share-data.component.html',
-  styleUrls: ['./share-data.component.scss'],
+  styleUrls: ['../../../styles.scss', './share-data.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.Emulated,
 })
