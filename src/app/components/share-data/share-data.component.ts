@@ -11,9 +11,9 @@ import {
 @Component({
   selector: 'app-share-data',
   templateUrl: './share-data.component.html',
-  styleUrls: ['../../../styles.scss', './share-data.component.scss'],
+  styleUrls: ['./share-data.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.Emulated,
+  encapsulation: ViewEncapsulation.ShadowDom,
 })
 export class ShareDataComponent implements OnInit {
   @Input() info: any = {};
